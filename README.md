@@ -22,3 +22,34 @@ Get first occurence only.
 You can use a number of column instead of it's name(not a best practice)
 DESC - descending
 ASC - ascending (default)
+
+## LIMIT
+Always at the very end of query
+e.g LIMIT 3
+
+## COUNT()
+COUNT(*) and COUNT(columnName) results can be different because (columnName) don't count null values.
+Syntax example:
+SELECT
+COUNT(*)
+FROM 
+table_name
+
+### COUNT(DISTINCT)
+
+Syntax:
+SELECT
+COUNT(DISTINCT column_name)
+FROM 
+table_name
+
+## WHERE
+
+Always immediately after FROM.
+Strings are case sensitive!
+SYNTAX:
+...
+FROM table_name
+WHERE condition (strings in '')
+Operators:
+is null, is not null, != and <> + arithmetic
