@@ -22,6 +22,7 @@ Get first occurence only.
 You can use a number of column instead of it's name(not a best practice)
 DESC - descending
 ASC - ascending (default)
+Separate arguments with comma if needed
 
 ## LIMIT
 Always at the very end of query
@@ -53,3 +54,18 @@ FROM table_name
 WHERE condition (strings in '')
 Operators:
 is null, is not null, != and <> + arithmetic
+
+### AND/OR
+
+WHERE + AND - both must be true
+WHERE + OR - one must be true 
+AND is proceeded first in query! 
+When more than two conditions -> Use parentheses and make them two 
+
+
+### BETWEEN ... AND ...
+
+Syntax:
+...
+WHERE column_name BETWEEN/NOT BETWEEN number/string AND number2/string2 
+eg. date 'YYYY-MM-DD' - you can add time (midnight is default time)
