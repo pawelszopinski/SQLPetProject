@@ -69,3 +69,13 @@ Syntax:
 ...
 WHERE column_name BETWEEN/NOT BETWEEN number/string AND number2/string2 
 eg. date 'YYYY-MM-DD' - you can add time (midnight is default time)
+
+### IN
+
+WHERE column_name IN (value1,...)
+
+### LIKE
+
+_ - any character
+% - any sequence of chars
+WHERE column_name LIKE/NOT LIKE 'A%' (string is case sensitive) ILIKE (a%) (case insensitive)
