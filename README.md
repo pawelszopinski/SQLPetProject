@@ -79,3 +79,20 @@ WHERE column_name IN (value1,...)
 _ - any character
 % - any sequence of chars
 WHERE column_name LIKE/NOT LIKE 'A%' (string is case sensitive) ILIKE (a%) (case insensitive)
+
+## Commenting & Aliases
+"--" - for single line
+/* ...*/ - for many lines
+
+### AS
+
+To change column name in a query output
+e.g.
+...
+COUNT (*) AS number_of_customers
+...
+
+## Aggregate functions
+
+e.g SUM,MIN,MAX,AVG (you can't list other column than aggregated)
+Can list many agg functions (separate by comma)
