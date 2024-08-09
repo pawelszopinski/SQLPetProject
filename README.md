@@ -96,3 +96,18 @@ COUNT (*) AS number_of_customers
 
 e.g SUM,MIN,MAX,AVG (you can't list other column than aggregated)
 Can list many agg functions (separate by comma)
+
+## GROUP BY
+
+Immediately after FROM or WHERE(if it's present)
+Syntax:
+SELECT
+column_name,
+SUM(column_name2)
+FROM table_name
+WHERE...
+GROUP BY column_name
+
+Every column here should be in agg functions or in GROUP BY clause
+
+You can ORDER BY agg function as well here.
