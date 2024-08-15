@@ -111,3 +111,11 @@ GROUP BY column_name
 Every column here should be in agg functions or in GROUP BY clause
 
 You can ORDER BY agg function as well here.
+
+### HAVING
+
+Filter groupings only by aggregations 
+e.g:
+...
+GROUP BY...
+HAVING COUNT(*) > 4000 (AND/OR etc. is possible)
