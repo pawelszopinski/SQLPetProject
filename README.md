@@ -119,3 +119,7 @@ e.g:
 ...
 GROUP BY...
 HAVING COUNT(*) > 4000 (AND/OR etc. is possible)
+
+## LOWER,UPPER,LENGTH
+
+Change the output of the column not the data itself
