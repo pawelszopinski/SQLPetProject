@@ -123,3 +123,22 @@ HAVING COUNT(*) > 4000 (AND/OR etc. is possible)
 ## LOWER,UPPER,LENGTH
 
 Change the output of the column not the data itself
+
+## LEFT & RIGHT
+
+LEFT or RIGHT (columnName,numberOfChars) - can be nested!
+|| - concatenate
+
+## POSITION
+
+POSITION ('char'/columnName IN columnName)
+
+## SUBSTRING 
+
+(string from start [for length])
+
+e.g 
+SELECT
+SUBSTRING(email for 1) || '***'||'.'|| SUBSTRING(last_name for 1)|| '***'|| SUBSTRING(email from POSITION('@' IN email)) as credentials1,
+'***' || SUBSTRING(email from POSITION ('.' IN email)-1 for 1) ||'.'|| SUBSTRING(last_name for 1)|| '***'|| SUBSTRING(email from POSITION('@' IN email)) as credentials2
+FROM customer;
