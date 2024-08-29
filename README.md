@@ -142,3 +142,12 @@ SELECT
 SUBSTRING(email for 1) || '***'||'.'|| SUBSTRING(last_name for 1)|| '***'|| SUBSTRING(email from POSITION('@' IN email)) as credentials1,
 '***' || SUBSTRING(email from POSITION ('.' IN email)-1 for 1) ||'.'|| SUBSTRING(last_name for 1)|| '***'|| SUBSTRING(email from POSITION('@' IN email)) as credentials2
 FROM customer;
+
+## EXTRACT
+
+Used to extract parts of timestamp/date
+e.g  EXTRACT(month from payment_date) -check documentation for more examples
+
+## TO_CHAR (date/time/interval, format)
+
+e.g. TO_CHAR(payment_date,'Day, HH24 MI')
