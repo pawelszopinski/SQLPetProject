@@ -151,3 +151,19 @@ e.g  EXTRACT(month from payment_date) -check documentation for more examples
 ## TO_CHAR (date/time/interval, format)
 
 e.g. TO_CHAR(payment_date,'Day, HH24 MI')
+
+## CASE
+ 
+ It's if/else statement
+ !First condition met will be displayed!
+ Syntax:
+ SELECT
+ ...
+ CASE 
+ WHEN condition1 THEN result1
+ WHEN condition2 THEN result2
+ ...
+ ELSE result
+ END
+ FROM tableName
+ ...
