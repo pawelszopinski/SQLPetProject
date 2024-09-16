@@ -167,3 +167,13 @@ e.g. TO_CHAR(payment_date,'Day, HH24 MI')
  END
  FROM tableName
  ...
+
+### CASE WHEN & SUM
+
+...
+SUM(CASE
+WHEN columnName condition THEN 1
+ELSE 0
+END) AS sth_superb
+...
+
