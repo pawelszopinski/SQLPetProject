@@ -177,3 +177,19 @@ ELSE 0
 END) AS sth_superb
 ...
 
+## COALESCE (omit null values)
+Returns first value of a list of v. which is not null
+... 
+COALESCE (columnName1, columnName2 ...)
+
+Instead of columnName2 we can add fixed value e.g string (columnNames need to be the same format!)
+
+## CAST(change the data type of a value)
+
+...
+CAST(value/column AS data type)
+varchar is text
+date 
+int
+bigint
+etc.
