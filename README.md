@@ -193,3 +193,21 @@ date
 int
 bigint
 etc.
+
+example:
+
+SELECT 
+	rental_date,
+	COALESCE(CAST(return_date as VARCHAR),'not arrived') as return_time
+FROM rental
+ORDER BY rental_date DESC
+
+## REPLACE
+
+REPLACE (columnName, oldtext, newtext)
+'' for blank space
+
+example:
+SELECT 
+CAST(REPLACE(flight_no,'PG','')as int)
+	FROM flights
